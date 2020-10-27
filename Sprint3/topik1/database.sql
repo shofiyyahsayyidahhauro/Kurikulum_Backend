@@ -9,7 +9,7 @@ CREATE TABLE santri
     ->age INT,
     ->birth_place VARCHAR (20),
     ->birth_date DATE'
-    hobby VARCHAR(20)); 
+    ->hobby VARCHAR(20)); 
 
 show tables;
 describe santri;    
