@@ -1,0 +1,17 @@
+﻿Mkdir                      = Untuk membuat folder. 
+cd                         = untuk mengganti folder.
+Ls                         = untuk mengetahui isi dalam folder
+touch                      = untuk membuat file.
+Code .                     = untuk membuka visual code.
+Php nama file.php          = untuk menampilkan isi file
+clear                      = untuk menghapus semua syntax
+rm                         =untuk mengahapus file
+ctrl+s                     = untuk menyimpan
+ctrl+ alt +t               = membuak terminal
+home                       = untuk kembali ke line awal
+end                        = untuk ke garis akhir
+ctrl+end                   =kembali ke akhir file
+ctrl+home                  = untuk kembali ke file awal
+ctrl+f                     = find
+ctrl+h                     = replace atau mengganti
+f3                         = menemukan lagi kata yg di temukan. 
