@@ -1,9 +1,9 @@
 <?php
-session_start();
- 
-// fungsi untuk menghapus seluruh session
-session_destroy();
- 
-// redirect ke halaman index.php (halaman login)
-header('Location: index.php');
+
+setcookie('email', '',time() - (3600 * 30), "/");
+
+header('location: index.php');
+
+exit;
+
 ?>
