@@ -1,23 +1,15 @@
-<?php
-
 mysql -u root -p
-
 password
-
 show databases;
-
 use database crud;
-mysql> use CRUD;
-
-Database changed
-mysql> show tables;
+use CRUD;
+show tables;
 +----------------+
 | Tables_in_CRUD |
 +----------------+
 | barang         |
 +----------------+
-
-mysql> desc barang;
+desc barang;
 +------------------+-------------+------+-----+---------+----------------+
 | Field            | Type        | Null | Key | Default | Extra          |
 +------------------+-------------+------+-----+---------+----------------+
@@ -26,11 +18,10 @@ mysql> desc barang;
 | deskripsi_barang | varchar(20) | YES  |     | NULL    |                |
 | tempat_kulakan   | varchar(20) | YES  |     | NULL    |                |
 +------------------+-------------+------+-----+---------+----------------+
-
-mysql> insert into barang
+insert into barang
     -> (id,nama_barang,deskripsi_barang,tempat_kulakan) values (1, 'Bullet Journal', 'Buku', 'Bandung');
 
-mysql> desc barang;
+desc barang;
 +------------------+-------------+------+-----+---------+----------------+
 | Field            | Type        | Null | Key | Default | Extra          |
 +------------------+-------------+------+-----+---------+----------------+
@@ -41,7 +32,7 @@ mysql> desc barang;
 +------------------+-------------+------+-----+---------+----------------+
 
 
-mysql> select * from barang;
+select * from barang;
 +----+----------------+------------------+----------------+
 | id | nama_barang    | deskripsi_barang | tempat_kulakan |
 +----+----------------+------------------+----------------+
@@ -49,4 +40,3 @@ mysql> select * from barang;
 +----+----------------+------------------+----------------+
 
 
-?>
