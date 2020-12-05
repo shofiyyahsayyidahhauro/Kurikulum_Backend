@@ -1,4 +1,7 @@
 <?php
-session_start();
-session_destroy();
-header('Location: index.php');
+    session_start();
+    //logout
+    session_destroy();
+    // arahkan ke halaman index.php 
+    header("location: indexlogin.php");
+?>
