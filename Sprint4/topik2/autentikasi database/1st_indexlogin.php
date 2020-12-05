@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>User Session Login DB</h1>
-    <form action="indexcrud.php" method="post">
+    <form action="2nd_indexcrud.php" method="post">
         <label for="">Nama</label>
         <input type="text" name="name">
         <label for="">Password</label>

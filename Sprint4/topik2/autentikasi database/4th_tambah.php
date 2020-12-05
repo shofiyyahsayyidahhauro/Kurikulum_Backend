@@ -7,7 +7,7 @@
 
 	<h2>CRUD DATA BARANG/h2>
 	<br/>
-	<a href="index.php">KEMBALI</a>
+	<a href="2nd_indexcrud.php">KEMBALI</a>
 	<br/>
 	<br/>
 	<h3>TAMBAH</h3>

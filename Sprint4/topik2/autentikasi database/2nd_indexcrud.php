@@ -1,5 +1,5 @@
 <?php
-   require_once("koneksi.php");
+   require_once("3rd_koneksi.php");
 
    $r= "SELECT * FROM barang";
    $data = mysqli_query($koneksi, $r);
@@ -14,7 +14,7 @@
 
 	<h2>CRUD DATA BARANG</h2>
 	<br/>
-	<a href="tambah.php">+ TAMBAH BARANG</a>
+	<a href="4th_tambah.php">+ TAMBAH BARANG</a>
 	<br/>
 	<br/>
 	<table border="1">
@@ -33,8 +33,8 @@
 				<td><?php echo $d['deskripsi_barang']; ?></td>
 				<td><?php echo $d['tempat_kulakan']; ?></td>
 				<td>
-					<a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
-					<a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+					<a href="5th_edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
+					<a href="6th_hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
 				</td>
 			</tr>
 			<?php 

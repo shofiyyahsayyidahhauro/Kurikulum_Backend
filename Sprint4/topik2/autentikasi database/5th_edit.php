@@ -7,18 +7,18 @@
 
 	<h2>CRUD DATA MAHASISWA</h2>
 	<br/>
-	<a href="indexcrud.php">KEMBALI</a>
+	<a href="2nd_indexcrud.php">KEMBALI</a>
 	<br/>
 	<br/>
 	<h3>EDIT DATA BARANG</h3>
 
 	<?php
-	include 'koneksi.php';
+	include '3rd_koneksi.php';
 	$id = $_GET['id'];
 	$data = mysqli_query($koneksi,"select * from barang where id='$id'");
 	while($d = mysqli_fetch_array($data)){
 		?>
-		<form method="post" action="update.php">
+		<form method="post" action="7th_update.php">
 			<table>
 				<tr>			
 					<td>Nama barang</td>

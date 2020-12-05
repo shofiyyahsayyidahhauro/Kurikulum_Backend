@@ -10,6 +10,6 @@ $id = $_GET['id'];
 mysqli_query($koneksi,"delete from barang where id='$id'");
 
 // mengalihkan halaman kembali ke index.php
-header("location:index.php");
+header("location:2nd_indexcrud.php");
 
 ?>
