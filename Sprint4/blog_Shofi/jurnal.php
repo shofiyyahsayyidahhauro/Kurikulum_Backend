@@ -6,7 +6,7 @@
     <title>Jurnal</title>
 </head>
 <body>
-    <center><h1>Data Produk</h1></center>
+    <center><h1>Jurnal</h1></center>
     
 <table>
     <thead>

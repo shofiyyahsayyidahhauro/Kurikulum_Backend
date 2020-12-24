@@ -5,10 +5,6 @@ class database{
 	 	$password = "password",
 		$database = "app_pondok",
 		$data;
-<<<<<<< HEAD
-=======
-
->>>>>>> 59c6a8ae5e4a75f8e3880202d58189e186517519
 		 
 	public function __construct(){
 
@@ -42,9 +38,5 @@ class database{
 
 }
 
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> 59c6a8ae5e4a75f8e3880202d58189e186517519
 ?>

@@ -5,7 +5,8 @@ class Blog extends Config{
 
     public function blog_index(){ 
 
-        $data = "SELECT * FROM blog";
+        $data =  "SELECT * FROM blog INNER JOIN tb_kategori ON blog.category_id = tb_kategori.id";
+       
         $blogs = $this->connect()->query($data); 
         ?>
        
@@ -21,6 +22,7 @@ class Blog extends Config{
                     <p><?php echo $blog['content'] ?></p> 
                     <br>
                     <small>
+                    <h3><?php echo $blog['kategori']?></h3>
                         penulis : <i><?php echo $blog['author'] ?></i> || <i><?php echo $blog['date'] ?></i> 
                         <?php 
                         if(isset($_SESSION['status'])){ //jika user sudah login tampil fungsi edit dan delete
@@ -55,6 +57,12 @@ class Blog extends Config{
                 <textarea name="content" id="" cols="30" rows="10"></textarea>
                 <br>
                 <input type="submit" name="submit" value="submit">
+                <select name="kategori" required>
+                    <option value="">--Pilih Kategori--</option>
+                    <option value="5">Habit Tracker</option>
+                    <option value="6">Saving</option>
+                    <option value="7">Goals</option>
+                </select>
             </form>
             <?php
         
@@ -63,8 +71,9 @@ class Blog extends Config{
                 $content = $_POST['content']; 
                 $author = $_SESSION['name'];
                 $date = date('Y-m-d'); 
+                $kategori = $_POST['kategori'];
         
-                $insert = "INSERT INTO blog (title, content, author, date) VALUES ('$title', '$content', '$author', '$date') "; 
+                $insert = "INSERT INTO blog (title, content, author, date, category_id) VALUES ('$title', '$content', '$author', '$date', '$kategori') "; 
                 if($this->connect()->query($insert) === TRUE ){ 
                     echo 'Berhasil Menambah Artikel';
                 }else{ 

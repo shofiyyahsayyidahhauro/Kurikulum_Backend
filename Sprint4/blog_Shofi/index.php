@@ -7,6 +7,9 @@
     <title>User Session Login</title>
 </head>
 <body>
+    
+<div>
+</div>
     <?php 
     require_once('Blog.php'); // include Blog.php file
     if(isset($_SESSION['status'])){ // validasi status login atau belum
