@@ -42,6 +42,8 @@ class Blog extends Config{
         }
     }
 
+    
+
     public function blog_create() 
     {
         if( isset($_SESSION['status']) ){ 
@@ -87,6 +89,7 @@ class Blog extends Config{
         }
     }
 
+        
     public function blog_delete($id){
         $sql = "DELETE FROM blog WHERE id=$id"; 
 
