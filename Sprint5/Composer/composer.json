@@ -1,0 +1,16 @@
+{
+    "name": "lenovo/composer",
+    "description": "Tugas Composer",
+    "authors": [
+        {
+            "name": "shofiyyahsayyidahhauro",
+            "email": "juneshofi@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
