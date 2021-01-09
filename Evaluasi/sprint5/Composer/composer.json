@@ -1,0 +1,16 @@
+{
+    "name": "lenovo/sprint5",
+    "description": "Evaluasi Sprint 5",
+    "authors": [
+        {
+            "name": "shofiyyahsayyidahhauro",
+            "email": "juneshofi@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
